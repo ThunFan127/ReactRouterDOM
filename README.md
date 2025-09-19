@@ -56,7 +56,7 @@ src/
 - `/products` - Danh sách sản phẩm
 - `/products/:id` - Chi tiết sản phẩm
 
-### Auth Routes (không navbar)
+### Auth Routes
 - `/login` - Đăng nhập
 
 ### Protected Admin Routes (có AdminNavbar)
@@ -69,7 +69,7 @@ src/
 
 1. **Clone repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ThunFan127/ReactRouterDOM.git
    cd react_router_dom
    ```
 
