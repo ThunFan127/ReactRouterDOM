@@ -46,7 +46,7 @@ const STYLES = {
   }
 }
 
-export default function AdminNavbar() {
+function AdminNavbar() {
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -82,10 +82,12 @@ export default function AdminNavbar() {
   return (
     <nav style={STYLES.nav}>
       <div style={STYLES.container}>
+        {/* Logo */}
         <Link to="/admin" style={STYLES.logo}>
           Admin
         </Link>
 
+        {/* Navigation Links */}
         <div style={STYLES.navLinks}>
           {ADMIN_LINKS.map(({ path, label }) => (
             <Link key={path} to={path} style={getLinkStyle(path)}>
@@ -106,3 +108,5 @@ export default function AdminNavbar() {
     </nav>
   )
 }
+
+export default AdminNavbar
